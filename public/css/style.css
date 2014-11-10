@@ -19,7 +19,7 @@ body {
 }
 
 header {
-    height: 700px;
+    height: 670px;
     width: 100%;
     background-color: red;
     color: white;
@@ -46,7 +46,7 @@ header {
 }
 
 .top-left {
-    width: 260px;
+    width: 275px;
 }
 
 .top-logo {
@@ -57,10 +57,12 @@ header {
 }
 
 .top-description {
-    font-size: 1.6em;
+    font-size: 1.8em;
+    text-align: justify;
 }
 
 
+/*
 .indiegogo-banner {
     position: relative;
     z-index: 100;
@@ -100,6 +102,7 @@ header {
     border-color: transparent transparent transparent #ffd600;
     display: inline-block;
 }
+*/
 
 nav {
     background-color: red;
@@ -126,93 +129,112 @@ nav.stick {
     float: right;
 }
 
-/* PROBLEM */
-
-.problem-wrapper {
-    width: 100%;
-    height: 300px;
-    margin-bottom: 40px;
-}
-
-.problem-wrapper > div {
-    display: inline-block;
-    vertical-align: top;
-}
-
-.problem-number {
-    width: 60px;
-    height: 60px;
-    margin-top: 100px;
-    background-color: red;
-    color: #FFD600;
-    border-radius: 30px;
-    line-height: 55px;
+.money {
+    background-color: #ffd600;
+    color: red;
     text-align: center;
-    font-size: 2.0em;
+    z-index: 1500;
+    padding-bottom: 20px;
+}
+
+.money .amount {
+    font-size: 6.0em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    letter-spacing: 10px;
+}
+.money .fact{
+    font-size: 1.78em;
+}
+
+.infographic {
+    width: 100%;
+}
+
+.different {
+    background-color: #ffd600;
+    text-align: center;
+    font-size: 2.6em;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.different .main {
+    font-size: 3.0em;
+    color: red;
+}
+
+.solution {
+    width: 100%;
+    background-color: red;
+    color: white; 
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.solution .solution-title {
+    font-size: 4.0em;
+    margin: 30px auto;
+}
+
+.solution .solution-desc {
+    font-size: 5.0em;
+    margin: 30px auto;
+}
+
+.conclusion {
+    background-color: #FFD600;
+}
+
+.conclusion .conclusion-title {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #FFD600;
+    text-align: center;
+    color: red;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 4.0em;
     font-weight: 700;
 }
 
-.problem-image {
-    margin-left: 60px;
-    width: 280px;
-    height: 280px;
-}
-
-.problem-image-one { background-image: url( "../media/problem-one.png" ); }
-.problem-image-two { background-image: url( "../media/problem-two.png" ); }
-.problem-image-three { background-image: url( "../media/problem-three.png" ); }
-
-.problem-description {
-    font-size: 1.5em;
-    width: 560px;
+.conclusion .right {
     float: right;
-    color: #333;
+    margin-right: 80px;
 }
 
-/* solution */
-.solution-top {
-    width: 100%;
-    background-color: red;
-    height: 580px;
+.conclusion .left {
+    margin-left: 80px;
 }
 
-.solution-bottom {
-    width: 100%;
-    background-color: #FFD600;
-    height: 600px;
-    font-size: 1.8em;
-    color: #333;
-}
-
-.solution-diagram-set {
-    text-align: center;
-}
-
-.solution-diagram {
-    height: 360px;
+.conclusion .left,
+.conclusion .right {
     display: inline-block;
-    vertical-align: top;
-}
-
-.solution-label {
-    font-size: 2.0em;
-    color: white;
+    width: 410px;
     text-align: center;
+    font-size: 2.0em;
+    color: #666;
 }
 
-.solution-diagram-image {
-    width: 300px;
-    height: 260px;
-}
-
-.solution-diagram-b {
-    margin-top: 100px;
-    vertical-align: top;
-    width: 100px !important;
-    height: 100px !important;
+.conclusion-desc {
+    font-size: 3.6em;
+    color: red;
+    font-weight: 700;
+    text-align: center;
+    margin: 30px auto;
 }
 
 /* indiegogo */
+.indiegogo-title {
+    letter-spacing: 3px;
+    font-size: 4.0em;
+    margin: 30px auto;
+    color: #ffd600;
+    text-align:center;
+    font-weight: 700;
+}
 
 .indiegogo-left {
     display: inline-block;
@@ -270,48 +292,55 @@ nav.stick {
     color: #888;
 }
 
-/* social */
+.social {
+    background-color: #ddd;
+}
 
 .social-box {
-    display: inline-block;
-    background-color: red;
-    width: 270px;
-    height: 280px;
+    width: 800px;
+    margin: 0 auto;
+    display:flex;
+    justify-content:space-between;
+}
+
+.social-box > div {
+    white-space:nowrap;
+    background:gray;
     text-align: center;
-    padding: 20px;
-    position: relative;
-}
-
-.social-box-twitter,
-.social-box-facebook {
-    margin-right: 42px;
-}
-
-.social-tag {
-    font-size: 2.4em;
-    text-align: left;
-    color: white;
-}
-
-.social-icon {
-    margin-top: 20px;    
-}
-
-.social-icon > img {
-    width: 100px;
-    height: 100px;
-}
-
-.social-action {
-    position: absolute;
-    width: 100%;
-    left: 0px;
     height: 60px;
+    width: 230px;
+    font-size: 1.2em;
     line-height: 60px;
-    bottom: 0px;
-    font-size: 2.4em;
-    text-transform: uppercase;
-    background-color: #FFD600;
-    font-weight: 700;
-    color: red;
+    letter-spacing: 5px;
 }
+
+.social-box .tumblr { background-color: #35465c; }
+.social-box .facebook { background-color: #3b5998; }
+.social-box .twitter { background-color: #4099FF; }
+
+.social-box .social-icon {
+    margin-bottom: 7px;
+    vertical-align: middle;
+}
+
+.social-box .social-icon,
+.social-box .social-name {
+    color: white;
+    display: inline-block;
+}
+
+.social-text {
+    letter-spacing: 3px;
+    text-align: center;
+    font-weight: 700;
+    color: red;;
+}
+
+.social-text .main {
+    font-size: 3.0em;
+}
+
+.social-text .secondary {
+    font-size: 1.8em;
+}
+
