@@ -537,6 +537,17 @@ nav.stick {
     display: inline-block;
 }
 
+.shirt .text .main {
+    font-size: 3.8em;
+    color: #ffd600; 
+    font-weight: 700;
+}
+
+.shirt .text .secondary {
+    font-size: 1.8em;
+    color: #666;
+}
+
 .shirt .buy {
     background-color: #40CFF0;
     color: red;;
@@ -546,5 +557,6 @@ nav.stick {
     width: 70%;
     margin: 0 auto;
     cursor: pointer;
+    font-weight: 700;
 }
 
