@@ -51,8 +51,6 @@ header {
     width: 275px;
 }
 
-.top-logo {
-}
 .top-logo img {
     width: 280px;
     height: 280px;
@@ -60,7 +58,7 @@ header {
 
 .top-description {
     font-size: 1.8em;
-    text-align: justify;
+    text-align: left;
 }
 
 
@@ -112,9 +110,9 @@ nav {
     height: 80px;
     font-size: 2.0em;
     font-weight: 700;
-    letter-spacing: 1px;
     width: 100%;
     z-index: 1000;
+    letter-spacing: 2px;
 }
 
 nav.stick {
@@ -124,10 +122,14 @@ nav.stick {
 
 .navlink-left {
     color: #FFD600;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 40px;
 }
 
 .navlink-right {
-    color: white;
+    cursor: pointer;
+    color: #FFD600;
     float: right;
 }
 
@@ -163,6 +165,7 @@ nav.stick {
 .money .buttons .donate {
     position: relative;
     background-color: #40CFF0;
+    cursor: pointer;
 }
 
 .money .buttons .donate > img {
@@ -181,6 +184,7 @@ nav.stick {
     width: 60px;
     height: 50px;
     position: relative;
+    cursor: pointer;
 }
 .money .buttons .share .options img {
     position: absolute;
@@ -296,7 +300,11 @@ nav.stick {
     font-weight: 700;
 }
 
+.indiegogo .text.yellow {
+    color: #ffd600;
+}
 .indiegogo .button {
+    cursor: pointer;
     background-color: white;
     letter-spacing: 5px;
     color: #40CFF0;
@@ -312,6 +320,7 @@ nav.stick {
 .subscribe {
     background-color: red;
     text-align: center;
+    position: relative;
 }
 
 .subscribe .form > div {
@@ -320,14 +329,14 @@ nav.stick {
 }
 
 .subscribe .form input {
+    padding-bottom: 10px;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 4px;
-    padding-bottom: 10px;
     width: 60%;
     height: 80px;
+    font-size: 4.0em;
     border: 0 solid #fff;
     border-bottom: 3px solid #fff;
-    font-size: 4.0em;
     background-color: red;
     color: white;
 }
@@ -343,6 +352,7 @@ nav.stick {
     line-height: 50px;
     color: red;
     font-size: 6.0em;
+    cursor: pointer;
 }
 
 .subscribe .text {
@@ -353,6 +363,22 @@ nav.stick {
 :-moz-placeholder { /* Firefox 18- */color: #ffd600;}
 ::-moz-placeholder {  /* Firefox 19+ */ color: #ffd600;}
 :-ms-input-placeholder { color: #ffd600;}
+
+.success {
+    display: none;
+    z-index: 100px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 4px;
+    width: 100%;
+    height: 168px;
+    font-size: 4.0em;
+    position: absolute;
+    top: 0px; left: 0px;
+    background-color: #ffd600;
+    color: red;
+    text-align: center;
+    padding-top: 70px;
+}
 
 /* quote */
 .quote-main {
@@ -392,6 +418,7 @@ nav.stick {
     font-size: 1.2em;
     line-height: 60px;
     letter-spacing: 5px;
+    cursor: pointer;
 }
 
 .social-box .tumblr { background-color: #35465c; }
@@ -424,3 +451,51 @@ nav.stick {
     font-size: 1.8em;
 }
 
+/* FAQ */
+.faq {
+}
+
+.faq-title {
+    color: red;    
+    font-size: 4.0em;
+    background-color: #ffd600;
+    padding: 40px;
+    padding-left: 212px;
+    z-index: 1500;
+    position: relative;
+}
+
+.faq .section .number,
+.faq .section .text {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 2.0em;
+}
+
+.faq .section .number {
+    width: 100px;
+}
+.faq .section .number > div {
+    width: 40px; height: 40px;
+    line-height: 40px;
+    font-size: 0.8em;
+    margin-top: 6px;
+    text-align: center;
+    border-radius: 30px;
+    font-family: 'Oswald', sans-serif;
+    background-color: #ffd600;
+    color: red;
+}
+
+.faq .section .text {
+    float: right;
+    width: 900px;
+}
+
+.faq .section .text .question {
+    color: red;
+}
+.faq .section .text .answer {
+    color: #666;
+
+}

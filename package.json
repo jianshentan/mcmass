@@ -6,7 +6,8 @@
     "start": "node app.js"
   },
   "dependencies": {
+    "ejs": "*",
     "express": "3.4.4",
-    "ejs": "*"
+    "nodemailer": "0.7.1"
   }
 }
