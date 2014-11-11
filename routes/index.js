@@ -44,4 +44,9 @@ exports.faq = function(req, res){
     res.render('faq');
 };
 
+exports.shop = function(req, res){
+    res.render('shop');
+};
+
+
 

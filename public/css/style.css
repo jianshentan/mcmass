@@ -124,7 +124,7 @@ nav.stick {
     color: #FFD600;
     cursor: pointer;
     display: inline-block;
-    margin-right: 40px;
+    margin-right: 70px;
 }
 
 .navlink-right {
@@ -380,24 +380,6 @@ nav.stick {
     padding-top: 70px;
 }
 
-/* quote */
-.quote-main {
-    font-size: 4.8em;
-    font-weight: 700;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    text-align: center;
-    color: red;
-}
-
-.quote-secondary {
-    font-size: 2.8em;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-align: right;
-    color: #888;
-}
-
 .social {
     background-color: #ddd;
 }
@@ -460,9 +442,11 @@ nav.stick {
     font-size: 4.0em;
     background-color: #ffd600;
     padding: 40px;
-    padding-left: 212px;
     z-index: 1500;
     position: relative;
+}
+.faq-title .text {
+    margin-left: 120px;
 }
 
 .faq .section .number,
@@ -497,5 +481,70 @@ nav.stick {
 }
 .faq .section .text .answer {
     color: #666;
-
 }
+
+/* shop */
+.shop-title {
+    position: relative;
+    z-index: 1500;
+    background-color: #40CFF0;
+}
+
+.shop-title .text {
+    color: white;
+    font-size: 3.8em;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.merch {
+    text-align: center;
+}
+
+.shirt {
+    width: 618px;
+    margin: 0 auto;
+}
+
+.shirt > .image {
+    width: 413px;
+    height: 488px;
+    
+}
+
+.shirt > .options {
+    width: 100%;
+    margin: 0 auto;
+    height: 180px;
+    background-color: #999;
+}
+
+.shirt > .options img {
+    display: inline-block; 
+    width: 129px;
+    height: 152px;
+    cursor: pointer;
+    padding: 12px;
+    border-bottom: 4px solid rgba(0,0,0,0);
+}
+.shirt > .options img.selected {
+    background-color: #ffd600;
+}
+
+.shirt .options .white,
+.shirt .options .red  {
+    display: inline-block;
+}
+
+.shirt .buy {
+    background-color: #40CFF0;
+    color: red;;
+    height: 80px;
+    line-height: 80px;
+    font-size: 3.0em;
+    width: 70%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+

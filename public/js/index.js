@@ -18,6 +18,13 @@ $( document ).ready( function() {
             $(".faq .section").each( function() {
                 $( this ).height( $( this ).find( ".text" ).height() ); 
             });
+            break;
+        case "shop":
+            PAGE = "SHOP";
+            nav.addClass( "stick" );
+            $( "body" ).css("margin-top", "80px");
+            merch();
+            break;
         default:
             break;
     }
@@ -49,13 +56,18 @@ $( document ).ready( function() {
         }
     });
     $( ".faq" ).click( function() {
-        if( PAGE != "faq" ) {
+        if( PAGE != "FAQ" ) {
             window.location.href= "/faq";
+        }
+    });
+    $( ".shop" ).click( function() {
+        if( PAGE != "SHOP" ) {
+            window.location.href= "/shop";
         }
     });
 
     //social buttons
-    $( ".donate" ).click( function() { window.location.href="" });
+    $( ".donate, .indiegogo .button" ).click( function() { window.location.href="" });
     $( ".tumblr" ).click( function() {
         window.open( "http://www.tumblr.com/share", "_blank");
     });
@@ -92,6 +104,29 @@ $( document ).ready( function() {
     };
 
 });
+
+function merch() {
+    $( ".shirt .options img" ).each( function() {
+        $( this ).click( function() {
+            $( ".shirt .options img" ).removeClass( "selected" );
+            $( this ).addClass( "selected" );
+            switch ( $( this ).attr( "data-handle" ) ) {
+                case "red-front":
+                    $( ".shirt .image" ).attr( "src", "media/shirt_red_front.png" );
+                    break;
+                case "red-back":
+                    $( ".shirt .image" ).attr( "src", "media/shirt_red_back.png" );
+                    break;
+                case "white-front":
+                    $( ".shirt .image" ).attr( "src", "media/shirt_white_front.png" );
+                    break;
+                case "white-back":
+                    $( ".shirt .image" ).attr( "src", "media/shirt_white_back.png" );
+                    break;
+            }
+        });
+    });
+};
 
 function createTweetPopup(text) {
         var width  = 575,
