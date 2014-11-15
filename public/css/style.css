@@ -433,6 +433,15 @@ nav.stick {
     font-size: 1.8em;
 }
 
+.email {
+    text-align: center;
+    font-size: 1.6em;
+    letter-spacing: 1px;
+}
+.email a {
+    text-decoration: none;
+}
+
 /* FAQ */
 .faq {
 }
@@ -502,52 +511,67 @@ nav.stick {
     text-align: center;
 }
 
+.hat, 
 .shirt {
     width: 618px;
     margin: 0 auto;
 }
 
+.hat > .image ,
 .shirt > .image {
     width: 413px;
-    height: 488px;
-    
 }
 
+.shirt > .image {
+    height: 488px;
+}
+
+.hat > .options ,
 .shirt > .options {
     width: 100%;
     margin: 0 auto;
     height: 180px;
-    background-color: #999;
 }
 
+.hat > .options img ,
 .shirt > .options img {
     display: inline-block; 
     width: 129px;
-    height: 152px;
     cursor: pointer;
     padding: 12px;
     border-bottom: 4px solid rgba(0,0,0,0);
 }
+.shirt > .options img {
+    height: 152px;
+}
+.hat > .options img {
+    height: 112px;
+}
+.hat > .options img.selected,
 .shirt > .options img.selected {
     background-color: #ffd600;
 }
 
+.hat .options .red ,
 .shirt .options .white,
 .shirt .options .red  {
     display: inline-block;
 }
 
+.hat .text .main ,
 .shirt .text .main {
     font-size: 3.8em;
     color: #ffd600; 
     font-weight: 700;
 }
 
+.hat .text .secondary ,
 .shirt .text .secondary {
     font-size: 1.8em;
     color: #666;
 }
 
+.hat .buy ,
 .shirt .buy {
     background-color: #40CFF0;
     color: red;;

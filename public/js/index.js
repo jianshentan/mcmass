@@ -126,27 +126,44 @@ function merch() {
             }
         });
     });
+
+    $( ".hat .options img" ).each( function() {
+        $( this ).click( function() {
+            $( ".hat .options img" ).removeClass( "selected" );
+            $( this ).addClass( "selected" );
+            switch ( $( this ).attr( "data-handle" ) ) {
+                case "hat-front":
+                    $( ".hat .image" ).attr( "src", "media/hat_red_front.png" );
+                    break;
+                case "hat-side":
+                    $( ".hat .image" ).attr( "src", "media/hat_red_side.png" );
+                    break;
+            }
+        });
+    });
+
+
 };
 
 function createTweetPopup(text) {
-        var width  = 575,
-            height = 400,
-            left   = ($(window).width()  - width)  / 2,
-            top    = ($(window).height() - height) / 2,
-            url    = this.href,
-            opts   = 'status=1' +
-                     ',width='  + width  +
-                     ',height=' + height +
-                     ',top='    + top    +
-                     ',left='   + left;
-            
-            var twitterMessage = ""; 
-            var words = text.split(" ");
-            for (var i=0; i<words.length; i++) 
-                twitterMessage += words[i]+"%20";
-            console.log(twitterMessage);
+    var width  = 575,
+        height = 400,
+        left   = ($(window).width()  - width)  / 2,
+        top    = ($(window).height() - height) / 2,
+        url    = this.href,
+        opts   = 'status=1' +
+                 ',width='  + width  +
+                 ',height=' + height +
+                 ',top='    + top    +
+                 ',left='   + left;
+        
+        var twitterMessage = ""; 
+        var words = text.split(" ");
+        for (var i=0; i<words.length; i++) 
+            twitterMessage += words[i]+"%20";
+        console.log(twitterMessage);
 
-            window.open("http://twitter.com/share?text="+twitterMessage+"%20@feastforjesus", 'twitter', opts);
+        window.open("http://twitter.com/share?text="+twitterMessage+"%20@feast4jesus", 'twitter', opts);
 };
 
 function validateEmail(email) { 
