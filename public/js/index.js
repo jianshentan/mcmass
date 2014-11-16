@@ -46,6 +46,30 @@ $( document ).ready( function() {
         }
     });
 
+    // video
+    $( ".top-video-frame img" ).click( function() {
+        $( "body" ).addClass( "video" );
+        $( ".video-overlay" ).fadeIn();
+    });
+    $( ".video-overlay" ).click( function() {
+        $( "body" ).removeClass( "video" );
+        $( this ).fadeOut();
+    });
+    resizeVideo();
+    $( window ).on( 'resize', resizeVideo );
+    function resizeVideo() {
+        var windowHeight = $(window).height(),
+        windowWidth = $(window).width();
+
+        if (windowWidth > (windowHeight*1.78)+60) {
+            $("#video-embed").attr("height", (windowHeight)*.70);
+            $("#video-embed").attr("width", ((windowHeight)*.70)*1.78);
+        } else {
+            $("#video-embed").attr("width", (windowWidth)*.80);
+            $("#video-embed").attr("height", ((windowWidth)*.80)*.5625);
+        }
+    }
+
     // home button
     $( ".home" ).click( function() {
         if( PAGE == "HOME" ) {

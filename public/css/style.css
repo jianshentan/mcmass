@@ -4,6 +4,9 @@ body {
     font-size: 1.0em;
     min-width: 1040px;
 }
+body.video{
+    overflow: hidden;
+}
 
 .content {
     margin: 0 auto;
@@ -38,13 +41,25 @@ header {
 
 .top-right {
     width: 680px;
-    margin-top: 0px;
+    margin-top: 40px;
     float: right;
 }
 
 .top-video-frame {
     padding-top: 40px;
-    background-color: red;
+    background-color: #ffd600;
+    text-align: center;
+    height: 400px;
+}
+
+.top-video-frame img {
+    cursor: pointer;
+}
+
+.top-video-frame .video-text {
+    font-size: 3.0em;
+    color: red;
+    font-weight: 600;
 }
 
 .top-left {
@@ -61,48 +76,36 @@ header {
     text-align: left;
 }
 
-
-/*
-.indiegogo-banner {
-    position: relative;
-    z-index: 100;
+.video-overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px; left: 0px;
+    background-color: rgba(255,255,255,0.8);
+    z-index: 2000;
+    display: none;
 }
 
-.indiegogo-banner .left {
-    position: absolute; 
-    top: 0; left: 0;
-    background-color: #FFD600;
-    width: 50%;
-    height: 80px;
-    z-index: -1;
-    vertical-align: top;
+.video-module {
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+    width: 85%;
 }
 
-.indiegogo-banner .content {
-    position: relative;
+.close-video {
+    cursor: pointer;
+    background-color: red;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 auto;
 }
-
-.indiegogo-text {
-    background-color: #FFD600;
-    height: 80px;
-    color: red;
-    line-height: 80px;
-    font-size: 5.0em;
-    font-weight: 700;
-    letter-spacing: 3px;
-    width: 70%;
-    display: inline-block;
-    vertical-align: top;
+.close-video img {
+    margin-top: 10px;
 }
-
-.indiegogo-triangle {
-    width: 0; height: 0;
-    border-style: solid;
-    border-width: 40px 0 40px 80px;
-    border-color: transparent transparent transparent #ffd600;
-    display: inline-block;
-}
-*/
 
 nav {
     background-color: red;
