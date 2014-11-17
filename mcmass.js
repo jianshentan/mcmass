@@ -31,7 +31,6 @@ app.get('/', routes.index);
 app.get('/faq', routes.faq);
 app.get('/shop', routes.shop);
 app.get('/subscribe', routes.email);
-app.get('/subscribers-hellovelocity', routes.subscribers);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

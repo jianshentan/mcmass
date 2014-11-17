@@ -2,9 +2,6 @@ var fs = require( 'fs' ),
     api_key = fs.readFileSync( 'send_grid_api_key', 'utf8' ),
     api_key = api_key.replace(/(\r\n|\n|\r)/gm,"")
     sendgrid  = require('sendgrid')("mcmass", api_key);
-console.log( sendgrid );
-
-var emails = [];
 
 exports.index = function(req, res){
     res.render('index');
@@ -12,7 +9,6 @@ exports.index = function(req, res){
 
 exports.email = function(req, res){
     var email =  req.query.email; 
-    emails.push( email );
 
     var sgEmail = new sendgrid.Email({
         to:       email,
@@ -38,7 +34,4 @@ exports.shop = function(req, res){
     res.render('shop');
 };
 
-exports.subscribers = function(req, res) {
-    res.render('subscribers', { subscribers: emails });
-};
 
