@@ -93,10 +93,10 @@ $( document ).ready( function() {
     //social buttons
     $( ".donate, .indiegogo .button" ).click( function() { window.location.href="" });
     $( ".tumblr" ).click( function() {
-        window.open( "http://www.tumblr.com/share", "_blank");
+        window.open( "http://www.tumblr.com/share" );
     });
     $( ".facebook" ).click( function() {
-        window.open( "https://www.facebook.com/sharer.php?u=www.mcmass.com", "_blank");
+        window.open( "https://www.facebook.com/sharer.php?u=www.mcmass.com" );
     });
     $( ".twitter" ).click( function() {
         createTweetPopup("PRAY DIFFERENT. Support The McMass Project");
@@ -185,9 +185,8 @@ function createTweetPopup(text) {
         var words = text.split(" ");
         for (var i=0; i<words.length; i++) 
             twitterMessage += words[i]+"%20";
-        console.log(twitterMessage);
 
-        window.open("http://twitter.com/share?text="+twitterMessage+"%20@feast4jesus", 'twitter', opts);
+        window.open("http://twitter.com/share?text="+twitterMessage+"%20@mcmassproject%20%23feast4jesus", 'twitter', opts);
 };
 
 function validateEmail(email) { 

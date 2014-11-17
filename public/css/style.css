@@ -81,7 +81,7 @@ header {
     height: 100%;
     position: fixed;
     top: 0px; left: 0px;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(0,0,0,0.8);
     z-index: 2000;
     display: none;
 }
@@ -383,6 +383,16 @@ nav.stick {
     padding-top: 70px;
 }
 
+.nominate {
+    height: 238px;
+    line-height: 238px;
+    text-align: center;
+    color: #666;
+    font-size: 3.8em;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
 .social {
     background-color: #ddd;
 }
@@ -442,11 +452,11 @@ nav.stick {
 }
 
 .social-text .main {
-    font-size: 3.0em;
+    font-size: 3.2em;
 }
 
 .social-text .secondary {
-    font-size: 1.8em;
+    font-size: 2.6em;
 }
 
 .email {
