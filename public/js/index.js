@@ -119,11 +119,12 @@ $( document ).ready( function() {
     });
 
     // indiegogo links
-    var indiegogo = "http://igg.me/at/mcmass";
+    var indiegogo = "http://www.indiegogo/projects/the-mcmass-project";
     $( ".indiegogo .button" ).click( function() { window.location.href = indiegogo });
     $( ".video-support" ).click( function() { window.location.href = indiegogo });
     $( "nav .donate" ).click( function() { window.location.href = indiegogo });
     $( ".money .donate" ).click( function() { window.location.href = indiegogo });
+    $( ".buy .donate" ).click( function() { window.location.href = indiegogo });
 
     function emailSubmit() {
         var textbox = $( ".form input" );
