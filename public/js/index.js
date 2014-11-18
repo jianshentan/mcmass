@@ -60,7 +60,14 @@ $( document ).ready( function() {
     $( ".video-overlay" ).click( function() {
         $( "body" ).removeClass( "video" );
         $( this ).fadeOut();
+
+        var vimeo = $( "#video-embed" );
+        var vidsrc = vimeo.attr( "src" );
+        vimeo.attr( "src", "");
+        vimeo.attr( "src", vidsrc );
     });
+
+
     resizeVideo();
     $( window ).on( 'resize', resizeVideo );
     function resizeVideo() {
@@ -117,14 +124,6 @@ $( document ).ready( function() {
             }
         }
     });
-
-    // indiegogo links
-    var indiegogo = "http://www.indiegogo.com/projects/the-mcmass-project";
-    $( ".indiegogo .button" ).click( function() { window.location.href = indiegogo });
-    $( ".video-support" ).click( function() { window.location.href = indiegogo });
-    $( "nav .donate" ).click( function() { window.location.href = indiegogo });
-    $( ".money .donate" ).click( function() { window.location.href = indiegogo });
-    $( ".buy .donate" ).click( function() { window.location.href = indiegogo });
 
     function emailSubmit() {
         var textbox = $( ".form input" );
