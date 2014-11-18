@@ -29,6 +29,12 @@ $( document ).ready( function() {
             break;
     }
 
+    // scroll down
+    $( ".scroll-down img" ).click( function() {
+        $("html, body").animate({ scrollTop: $( ".money" ).position().top }, "slow");
+    });
+
+
     // stick
     $( window ).scroll( function() {
         if( PAGE == "HOME" ) {
@@ -59,7 +65,7 @@ $( document ).ready( function() {
     $( window ).on( 'resize', resizeVideo );
     function resizeVideo() {
         var windowHeight = $(window).height(),
-        windowWidth = $(window).width();
+            windowWidth = $(window).width();
 
         if (windowWidth > (windowHeight*1.78)+60) {
             $("#video-embed").attr("height", (windowHeight)*.70);
@@ -111,6 +117,13 @@ $( document ).ready( function() {
             }
         }
     });
+
+    // indiegogo links
+    var indiegogo = "http://igg.me/at/mcmass";
+    $( ".indiegogo .button" ).click( function() { window.location.href = indiegogo });
+    $( ".video-support" ).click( function() { window.location.href = indiegogo });
+    $( "nav .donate" ).click( function() { window.location.href = indiegogo });
+    $( ".money .donate" ).click( function() { window.location.href = indiegogo });
 
     function emailSubmit() {
         var textbox = $( ".form input" );
@@ -165,7 +178,6 @@ function merch() {
             }
         });
     });
-
 
 };
 
