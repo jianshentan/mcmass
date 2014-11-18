@@ -119,7 +119,7 @@ $( document ).ready( function() {
     });
 
     // indiegogo links
-    var indiegogo = "http://www.indiegogo/projects/the-mcmass-project";
+    var indiegogo = "http://www.indiegogo.com/projects/the-mcmass-project";
     $( ".indiegogo .button" ).click( function() { window.location.href = indiegogo });
     $( ".video-support" ).click( function() { window.location.href = indiegogo });
     $( "nav .donate" ).click( function() { window.location.href = indiegogo });
