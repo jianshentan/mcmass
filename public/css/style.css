@@ -492,6 +492,11 @@ nav.stick {
     text-decoration: none;
 }
 
+.social .hellovelocity {
+    width: 100%;
+    text-align: center; 
+}
+
 /* FAQ */
 .faq {
 }
