@@ -226,6 +226,9 @@ nav.stick {
 .infographic {
     width: 100%;
 }
+.problem-disclaimer {
+    font-size: 1.4em;
+}
 
 .different {
     position: relative;
@@ -494,6 +497,9 @@ nav.stick {
 
 .social .hellovelocity {
     width: 100%;
+    text-align: center; 
+}
+.social .disclaimer {
     text-align: center; 
 }
 
