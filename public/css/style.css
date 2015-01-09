@@ -1,3 +1,8 @@
+.copyright-infringed.text {
+    color:black;
+    background-color: black;
+}
+
 body {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     margin: 0px;
@@ -499,9 +504,6 @@ nav.stick {
     width: 100%;
     text-align: center; 
 }
-.social .disclaimer {
-    text-align: center; 
-}
 
 /* FAQ */
 .faq {
@@ -520,7 +522,7 @@ nav.stick {
 }
 
 .faq .section .number,
-.faq .section .text {
+.faq .section >  .text {
     display: inline-block;
     vertical-align: top;
     font-size: 2.0em;
@@ -541,7 +543,7 @@ nav.stick {
     color: red;
 }
 
-.faq .section .text {
+.faq .section > .text {
     float: right;
     width: 900px;
 }
