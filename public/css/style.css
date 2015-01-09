@@ -1,6 +1,14 @@
+.cursor {
+    display: none;
+    position: absolute;
+    z-index: 5000;
+}
 .copyright-infringed.text {
     color:black;
     background-color: black;
+}
+.copyright-infringed {
+    cursor: pointer;
 }
 
 body {

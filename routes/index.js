@@ -34,4 +34,8 @@ exports.shop = function(req, res){
     res.render('shop');
 };
 
+exports.copyright = function(req, res){
+    res.render('copyright');
+};
+
 

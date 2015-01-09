@@ -1,6 +1,37 @@
+$( ".copyright-infringed" ).click( function() {
+    window.location.href = "/copyright";
+});
+
 var PAGE = "";
+// copy right infringed!
+if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    $( ".hoverable" ).on( 'mouseenter mouseleave', function() {
+        $( this ).toggleClass( 'hover' );
+    });
+}
+$(document).on('mousemove', function(e){
+    var cursor = $( ".cursor" );
+    cursor.css({
+        left:  e.pageX + 5,
+        top:   e.pageY + 5,
+        color: "white"
+    });
+
+    if( $( ".copyright-infringed" ).hasClass( "hover" ) ) {
+        cursor.css( "font-size", "3.0em" );
+        cursor.show().html( "?" ).css({
+            width: "30px",
+            height: "80px",
+            color: "red",
+            top: e.pageY - 60,
+        }); 
+    } else {
+        cursor.hide();
+    }
+});
 
 $( document ).ready( function() {
+
     var nav = $( "nav" ),
         navPos = nav.position().top;
 
