@@ -1,5 +1,5 @@
 $( ".copyright-infringed" ).click( function() {
-    window.location.href = "/copyright";
+    window.location.href = "copyright.html";
 });
 
 var PAGE = "";
@@ -39,10 +39,10 @@ $( document ).ready( function() {
     route = route[ route.length-1 ];
     switch ( route ) {
         case "":
-        case "index": 
+        case "index.html": 
             PAGE = "HOME";
             break;
-        case "faq": 
+        case "faq.html": 
             PAGE = "FAQ";
             nav.addClass( "stick" );
             $( "body" ).css("margin-top", "80px");
@@ -50,7 +50,7 @@ $( document ).ready( function() {
                 $( this ).height( $( this ).find( ".text" ).height() ); 
             });
             break;
-        case "shop":
+        case "shop.html":
             PAGE = "SHOP";
             nav.addClass( "stick" );
             $( "body" ).css("margin-top", "80px");
@@ -120,17 +120,17 @@ $( document ).ready( function() {
             $("html, body").animate({ scrollTop: 0 }, "slow");
             return false;
         } else {
-            window.location.href="/";
+            window.location.href="index.html";
         }
     });
     $( ".faq" ).click( function() {
         if( PAGE != "FAQ" ) {
-            window.location.href= "/faq";
+            window.location.href= "faq.html";
         }
     });
     $( ".shop" ).click( function() {
         if( PAGE != "SHOP" ) {
-            window.location.href= "/shop";
+            window.location.href= "shop.html";
         }
     });
 
